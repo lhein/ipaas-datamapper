@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:atlas="http://mediadriver.com/atlas/v2"
+	xmlns:atlasj="http://mediadriver.com/atlas/java/v2" targetNamespace="http://mediadriver.com/atlas/java/v2"
+	elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+	<import namespace="http://mediadriver.com/atlas/v2"	
+		schemaLocation="http://mediadriver.com/atlas/v2/atlas-model-v2.xsd" />
+
+	<complexType name="JavaEnumFields">
+		<sequence>
+			<element name="JavaEnumField" type="atlasj:JavaEnumField" minOccurs="0" maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+
+	<complexType name="JavaField">
+		<complexContent>
+			<extension base="atlas:Field">
+				<sequence>
+					<element name="Annotations" type="atlas:StringList" minOccurs="1" maxOccurs="1" />
+				</sequence>
+				<attribute name="name" type="string" use="required" />
+				<attribute name="value" type="string" use="optional" />
+				<attribute name="className" type="string" use="optional" />
+				<attribute name="type" type="atlas:FieldType" use="optional" />
+				<attribute name="getMethod" type="string" use="optional" />
+				<attribute name="setMethod" type="string" use="optional" />
+				<attribute name="primitive" type="boolean" use="optional" />
+				<attribute name="array" type="boolean" use="optional" />
+				<attribute name="synthetic" type="boolean" use="optional" />
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="JavaEnumField">
+		<complexContent>
+			<extension base="atlas:Field">
+				<attribute name="name" type="string" use="optional" />
+				<attribute name="ordinal" type="int" use="optional" />
+			</extension>
+		</complexContent>
+	</complexType>
+	
+	<complexType name="JavaClass">
+		<complexContent>
+			<extension base="atlas:Document">
+				<sequence>
+					<element name="JavaEnumFields" type="atlasj:JavaEnumFields" minOccurs="1" maxOccurs="1" />
+				</sequence>
+				<attribute name="className" type="string" use="optional" />
+				<attribute name="packageName" type="string" use="optional" />
+				<attribute name="fullyQualifiedName" type="string" use="optional" />
+				<attribute name="enumeration" type="boolean" use="optional" /> 	
+			</extension>
+		</complexContent>
+	</complexType>
+</schema>

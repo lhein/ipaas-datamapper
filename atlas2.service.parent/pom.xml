@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.mediadriver.atlas</groupId>
+		<artifactId>atlas2.parent</artifactId>
+		<version>1.8.0-SNAPSHOT</version>
+		<relativePath>../atlas2.parent/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>atlas2.service.parent</artifactId>
+	<packaging>pom</packaging>
+	<name>Atlas :: Service Parent POM</name>
+
+	<profiles>
+		<profile>
+			<id>parent</id>
+			<modules />
+		</profile>
+		<profile>
+			<id>fast</id>
+			<modules>
+				<module>atlas2.service</module>
+			</modules>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		<profile>
+			<id>full</id>
+			<modules>
+				<module>atlas2.service</module>
+			</modules>
+		</profile>
+	</profiles>
+</project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AtlasMapping xmlns="http://mediadriver.com/atlas/v2" name="junit">
+	<FieldMappings>
+		<FieldMapping>
+			<InputField>
+				<Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+					xmlns:ns3="http://mediadriver.com/atlas/java/v2" xsi:type="ns3:JavaField"
+					name="foo" value="bar" />
+			</InputField>
+			<OutputField>
+				<Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+					xmlns:ns3="http://mediadriver.com/atlas/java/v2" xsi:type="ns3:JavaField"
+					name="woot" value="blerg" />
+			</OutputField>
+		</FieldMapping>
+	</FieldMappings>
+</AtlasMapping>

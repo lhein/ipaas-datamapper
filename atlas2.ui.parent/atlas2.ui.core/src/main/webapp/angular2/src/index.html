@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular QuickStart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+
+    <link rel="stylesheet" href="lib/patternfly-3.19.0/css/patternfly.min.css" >
+    <link rel="stylesheet" href="lib/patternfly-3.19.0/css/patternfly-additions.min.css" >
+    <script src="lib/patternfly-3.19.0/js/jquery-2.1.4.min.js"></script>
+    <!--
+    <link href="tests.css" rel="stylesheet" media="screen, print">    
+    -->
+    <script src="lib/patternfly-3.19.0/js/bootstrap.min.js"></script>
+    <script src="lib/patternfly-3.19.0/js/jquery.dataTables.min.js"></script>
+    <script src="lib/patternfly-3.19.0/js/dataTables.select.min.js"></script>
+    <script src="lib/patternfly-3.19.0/js/bootstrap-select.min.js"></script>
+
+    <script src="lib/patternfly-3.19.0/js/patternfly.dataTables.pfEmpty.js"></script>
+    <script src="lib/patternfly-3.19.0/js/patternfly.dataTables.pfFilter.js"></script>
+    <script src="lib/patternfly-3.19.0/js/patternfly.dataTables.pfResize.js"></script>
+    <script src="lib/patternfly-3.19.0/js/patternfly.dataTables.pfSelect.js"></script>
+    <script src="lib/patternfly-3.19.0/js/patternfly.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script>
+      System.import('main.js').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body class="cards-pf">
+    <nav class="navbar navbar-default navbar-pf" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><strong>iPaaS</strong> Data Mapper</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-utility">
+          <li><a href="#">Status</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="pficon pficon-user"></span>Brian Johnson <b class="caret"></b>
+            </a>
+          </li>
+        </ul>        
+      </div>
+    </nav>
+    <div class="container fill">      
+    		<div class="row toolbar-pf">
+			    <ol class="breadcrumb">
+			      <li><a href="#">Dashboard</a></li>
+			      <li><a href="#">Create an integration</a></li>
+			      <li class="active"><strong>Data Mapping Canvas</strong></li>
+			    </ol>
+    		</div>
+        <div class="row toolbar-pf">
+          <div class="col-sm-12">
+          	<form class="toolbar-pf-actions">
+	            <div class="form-group" style="padding-left:0px;">
+	              <button class="btn btn-default" type="button">Tool</button>
+	              <button class="btn btn-default" type="button">Tool</button>
+	              <button class="btn btn-default" type="button">Tool</button>
+	            </div>            
+              <div class="form-group toolbar-pf-filter" style="border-right:0px solid black; padding-left:20px;">
+                <label class="sr-only" for="filter">Name</label>
+                <div class="input-group">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Name <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li class="selected"><a href="#">Name</a></li>
+                      <li><a href="#">Type</a></li>
+                      <li><a href="#">Color</a></li>
+                    </ul>
+                  </div><!-- /btn-group -->
+                  <input type="text" class="form-control" id="filter" placeholder="Filter By Name...">
+                </div><!-- /input-group -->
+              </div> <!-- /pf filter -->        
+            	<div class="toolbar-pf-action-right">
+            		<div class="form-group">
+            			<label>Alerts</label><div style="display:inline; margin-left:10px; margin-right:0px; color:white; background-color:#888888; padding:1px 10px;">3</div>
+            		</div>
+		            <div class="form-group toolbar-pf-view-selector">
+		              <button class="btn btn-link " style="margin-top:-8px;"><i class="fa fa-search-plus"></i></button>
+		              <button class="btn btn-link " style="margin-top:-8px;"><i class="fa fa-search-minus"></i></button>
+		              <button class="btn btn-link " style="margin-top:-8px;"><i class="fa fa-arrows-alt"></i></button>
+		              <button class="btn btn-link " style="margin-top:-8px;"><i class="fa fa-exchange"></i></button>
+		            </div>
+            	</div> <!-- /action-right -->
+        		</form>        
+        	</div>
+        </div>
+			<my-app>Loading AppComponent content here ...</my-app>
+    </div>
+  </body>
+</html>

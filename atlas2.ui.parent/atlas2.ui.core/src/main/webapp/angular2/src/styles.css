@@ -1,0 +1,120 @@
+.row { margin:0px; }
+
+.toolbar-pf { background-color:#f5f5f5; border-bottom:1px solid #d1d1d1; }
+.cards-pf { background-color:white; }
+.breadcrumb { margin:0px; padding:0px; padding-bottom:10px; padding-left:20px; }
+.breadcrumb A { color:#5CBADF; font-weight:bold; }
+
+.docDef { margin-top:20px; }
+.docDef .card-pf { padding:0px; margin:0px; width:80%; }
+.docDef .card-pf-title { padding:10px; margin:0px; text-align:left; font-size:12px; font-weight:bold; }
+.docDef .card-pf-heading { background-image:linear-gradient(rgb(250, 250, 250) 0px, rgb(237, 237, 237) 100%); margin:0px; padding:0px; }
+.docDef .card-pf-body { background-color:#FBFBFB; padding:0px; margin:0px; }
+.docDef .fieldDetail LABEL { width:90%; }
+.docDef .fieldDetail { color:black; padding:5px 10px; width:100%; margin:0px; padding-left:15px; }
+.docDef .selectedField { background-color:#02A2D8; color:white; }
+
+.fieldMappingDetail { border-left:1px solid #d1d1d1; padding:10px; height:100%; width:95%; }
+.fieldMappingDetail .fieldDetail { display:inline; }
+.fieldMappingDetail .fieldDetail LABEL { margin-bottom:5px; font-size:10px; font-weight:bold; }
+.fieldMappingDetail A { font-size:10px; font-weight:bold; }
+.fieldMappingDetail I { font-size:12px; }
+.fieldMappingDetail A:hover { color:#363636; cursor:pointer; text-decoration:none; }
+.fieldMappingDetail A.button I { margin-right:5px; font-size:10px; }
+.fieldMappingDetail A.button { margin:10px; margin-left:0px; border:1px solid #02A2D7; padding:5px 10px; border-radius:5px; }
+.fieldMappingDetail A.button:hover { border:1px solid #363636; }
+.fieldMappingDetail HR { margin-top:15px; margin-bottom:15px; border-top:1px solid #d1d1d1; }
+.fieldMappingDetail .sectionHeader { font-weight:bold; font:size:150%; }
+
+.alert { margin-bottom:5px; }
+.alert .close { font-size:18px; color:#888888; }
+
+.mappingFieldSection { border:1px solid gray; padding:2px 4px; margin-top:5px; margin-bottom:10px; border-radius:3px; }
+
+html, body {
+    height: 100%;
+}
+
+.fill { 
+    min-height: 100%;
+    height: 100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+/* for app.modal.component.ts */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: absolute;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    left:10%;
+    top:10%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:10%; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:10%; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* end app.modal.component */

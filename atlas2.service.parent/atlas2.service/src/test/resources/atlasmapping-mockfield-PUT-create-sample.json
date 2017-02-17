@@ -1,0 +1,29 @@
+{
+	"jsonType": "com.mediadriver.atlas.v2.AtlasMapping",
+	"fieldMappings": {
+			"fieldMapping": [
+				{
+					"inputField": {
+						"jsonType": "com.mediadriver.atlas.v2.MappedField",
+						"field": {
+							"jsonType": "com.mediadriver.atlas.v2.MockField",
+							"name": "foo",
+							"value": "bar"
+						},
+						"fieldActions": []
+					},
+					"outputField": {
+						"jsonType": "com.mediadriver.atlas.v2.MappedField",
+						"field": {
+							"jsonType": "com.mediadriver.atlas.v2.MockField",
+							"name": "woot",
+							"value": "blerg"
+						},
+						"fieldActions": []
+					}
+				}
+			]
+		}
+	},
+	"name": "junit4"
+}

@@ -1,0 +1,1 @@
+REWRITE_SYSTEM "http://mediadriver.com/atlas/v2/atlas-model-v2.xsd" "maven:com.mediadriver.atlas:atlas2.model!/atlas-model-v2.xsd"

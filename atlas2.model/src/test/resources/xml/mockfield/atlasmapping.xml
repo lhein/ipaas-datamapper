@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AtlasMapping xmlns="http://mediadriver.com/atlas/v2" name="junit">
+	<FieldMappings>
+		<FieldMapping>
+			<InputField>
+				<Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+					xsi:type="MockField" name="foo" value="bar" />
+			</InputField>
+			<OutputField>
+				<Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+					xsi:type="MockField" name="woot" value="blerg" />
+			</OutputField>
+		</FieldMapping>
+	</FieldMappings>
+</AtlasMapping>
